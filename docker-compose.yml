@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  react:
+    build:
+      context: .
+      dockerfile: ./.devcontainer/Dockerfile
+      args:
+        - NODE_VER=20.10.0
+    tty: true
+    volumes:
+      - type: bind
+        source: ./frontend
+        target: /home/node/app
+      - type: volume
+        source: node_modules
+        target: /home/node/app/node_modules
+    ports:
+      - 5173:5173
+
+volumes:
+  node_modules:
