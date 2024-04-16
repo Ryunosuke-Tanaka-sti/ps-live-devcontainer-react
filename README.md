@@ -2,6 +2,13 @@
 
 pullしてdevcontainerで起動すれば実行できます。
 
+## プロジェクト要件
+
+- Nodeバージョン：20.10.0
+- パッケージ管理ツール：npm
+- ビルドツール：Vite
+- プロジェクト：React + Typescirpt
+
 ## 資料
 
 発表資料：assets/PS Live　デブコン祭り-React.pdf
@@ -24,10 +31,3 @@ pullしてdevcontainerで起動すれば実行できます。
 ├── docker-compose.yml
 └── README.md
 ```
-
-## 要件
-
-- Nodeバージョン：20.10.0
-- パッケージ管理ツール：npm
-- ビルドツール：Vite
-- プロジェクト：React + Typescirpt
